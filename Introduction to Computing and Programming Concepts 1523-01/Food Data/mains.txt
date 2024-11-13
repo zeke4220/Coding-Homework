@@ -1,0 +1,19 @@
+def main():
+    filename = 'Elements.txt'  # Update the filename to match your actual file name
+    food_values = read_food_values(filename)
+    
+    # Define the breakfast items
+    my_breakfast = ['2 eggs', '4oz ham', '1pc whole wheat toast', '4oz heinz baked beans',
+                    '8oz. Orange Juice', '4oz red cabbage sauerkraut', '4oz pickled beets']
+
+    # Calculate the total nutrition for the breakfast
+    total_proteins, total_fat, total_calories = calculate_meal_nutrition(food_values, my_breakfast)
+
+    # Print the results
+    print("My Breakfast Nutrition:")
+    print(f"Total Proteins: {total_proteins} grams")
+    print(f"Total Fat: {total_fat} grams")
+    print(f"Total Calories: {total_calories} calories")
+
+if __name__ == "__main__":
+    main()
